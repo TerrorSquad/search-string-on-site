@@ -19,7 +19,7 @@ $ npm install -g ssos
 $ ssos COMMAND
 running command...
 $ ssos (-v|--version|version)
-ssos/0.0.0 linux-x64 node-v14.9.0
+ssos/1.0.0 linux-x64 node-v14.9.0
 $ ssos --help [COMMAND]
 USAGE
   $ ssos COMMAND
