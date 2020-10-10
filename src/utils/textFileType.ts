@@ -1,9 +1,9 @@
 import { isBinaryFile } from 'isbinaryfile'
 
-const isTextFile = async (filePath: string) => {
-      const isBinary = await isBinaryFile(filePath)
+const isTextFile=async (filePath: string) => {
+  const isBinary=await isBinaryFile(filePath)
 
-      return !isBinary
+  return !isBinary
 }
 
 export default isTextFile

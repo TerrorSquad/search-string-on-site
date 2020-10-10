@@ -1,6 +1,6 @@
 import * as fasterXmlParser from 'fast-xml-parser'
-const he = require('he')
-const options = {
+const he=require('he')
+const options={
   attributeNamePrefix: "@_",
   attrNodeName: "attr",
   textNodeName: "#text",
@@ -21,11 +21,11 @@ const options = {
   stopNodes: ["parse-me-as-string"]
 };
 
-const xml2Json = (xmlString: string) => {
-  if (fasterXmlParser.validate(xmlString) !== true) {
+const xml2Json=(xmlString: string) => {
+  if (fasterXmlParser.validate(xmlString)!==true) {
     throw new Error("Content is not a valid XML string!")
   }
-  const traversalObj = fasterXmlParser.getTraversalObj(xmlString, options);
+  const traversalObj=fasterXmlParser.getTraversalObj(xmlString, options);
   return fasterXmlParser.convertToJson(traversalObj, options);
 }
 
