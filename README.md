@@ -16,16 +16,17 @@ Search String on Site
 <!-- usage -->
 ```sh-session
 $ npm install -g ssos
-$ ssos ./filePath
+$ ssos COMMAND
 running command...
 $ ssos (-v|--version|version)
-ssos/1.0.0 linux-x64 node-v14.9.0
+ssos/1.0.1 linux-x64 node-v14.9.0
 $ ssos --help [COMMAND]
 USAGE
-  $ ssos sitemap.xml
+  $ ssos COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+
 <!-- commandsstop -->

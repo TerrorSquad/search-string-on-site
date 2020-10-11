@@ -1,7 +1,7 @@
 {
   "name": "ssos",
   "description": "Search String on Site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Goran Ninkovic @TerrorSquad",
   "bin": {
     "ssos": "./bin/run"
