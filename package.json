@@ -6,7 +6,7 @@
   "bin": {
     "ssos": "./bin/run"
   },
-  "bugs": "https://github.com/TerrorSquad/ssos/issues",
+  "bugs": "https://github.com/TerrorSquad/search-string-on-site/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -39,7 +39,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/TerrorSquad/ssos",
+  "homepage": "https://github.com/TerrorSquad/search-string-on-site",
   "keywords": [
     "oclif"
   ],
@@ -48,7 +48,7 @@
   "oclif": {
     "bin": "ssos"
   },
-  "repository": "TerrorSquad/ssos",
+  "repository": "TerrorSquad/search-string-on-site",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
