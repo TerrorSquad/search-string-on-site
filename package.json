@@ -1,12 +1,12 @@
 {
-  "name": "ssos",
+  "name": "suos",
   "description": "Search String on Site",
   "version": "1.0.1",
   "author": "Goran Ninkovic @TerrorSquad",
   "bin": {
-    "ssos": "./bin/run"
+    "suos": "./bin/run"
   },
-  "bugs": "https://github.com/TerrorSquad/search-string-on-site/issues",
+  "bugs": "https://github.com/TerrorSquad/search-url-on-site/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -15,7 +15,8 @@
     "got": "^11.7.0",
     "he": "^1.2.0",
     "isbinaryfile": "^4.0.6",
-    "tslib": "^1.14.1"
+    "tslib": "^1.14.1",
+    "workerpool": "^6.0.2"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
@@ -39,16 +40,16 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/TerrorSquad/search-string-on-site",
+  "homepage": "https://github.com/TerrorSquad/search-url-on-site",
   "keywords": [
     "oclif"
   ],
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
-    "bin": "ssos"
+    "bin": "suos"
   },
-  "repository": "TerrorSquad/search-string-on-site",
+  "repository": "TerrorSquad/search-url-on-site",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
