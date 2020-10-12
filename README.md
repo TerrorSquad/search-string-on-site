@@ -10,7 +10,7 @@ Search String on Site
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
+* [Description](#description)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -19,16 +19,10 @@ $ npm install -g suos
 $ suos COMMAND
 running command...
 $ suos (-v|--version|version)
-suos/2.0.0 linux-x64 node-v14.9.0
+suos/2.0.1 linux-x64 node-v14.9.0
 $ suos --help [COMMAND]
 USAGE
   $ suos COMMAND
-$ suos mySitemapl.xml "admin.com"
-Runs suos on the the file mySitemapl.xml and searches for the string "admin.com" in the response of each page.
-$ suos mySitemap.xml -a
-Runs suos on mySitemap.xml and searches for the string ""
-$ suos mySitemap.xml -a -p
-Save as above, only it will first print the search regex, then the matches.
 ...
 ```
 <!-- usagestop -->
