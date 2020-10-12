@@ -23,16 +23,18 @@ suos/2.0.0 linux-x64 node-v14.9.0
 $ suos --help [COMMAND]
 USAGE
   $ suos COMMAND
-...
-```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
-```sh-session
 $ suos mySitemapl.xml "admin.com"
 Runs suos on the the file mySitemapl.xml and searches for the string "admin.com" in the response of each page.
 $ suos mySitemap.xml -a
 Runs suos on mySitemap.xml and searches for the string ""
+$ suos mySitemap.xml -a -p
+Save as above, only it will first print the search regex, then the matches.
+...
 ```
-<!-- commandsstop -->
+<!-- usagestop -->
+
+# Description
+
 This command can be used to search for a specific string inside the `href` attribute of every `<a>` tag on a web page. It requires a sitemap xml file containing the list of URL on which the search will take place.
+
+It will write to STDOUT in a csv format by default.
