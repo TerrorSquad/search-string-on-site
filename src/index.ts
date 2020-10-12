@@ -3,8 +3,6 @@ import * as fs from 'fs'
 import isTextFile from './utils/textFileType'
 import xml2Json from './utils/xmlToJson'
 import got from 'got'
-const workerpool=require('workerpool');
-const pool=workerpool.pool();
 
 class Suos extends Command {
   static description='Searches all pages of website based on a sitemap and search string'
