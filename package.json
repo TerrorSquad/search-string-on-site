@@ -1,7 +1,7 @@
 {
   "name": "suos",
   "description": "Search String on Site",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Goran Ninkovic @TerrorSquad",
   "bin": {
     "suos": "./bin/run"
