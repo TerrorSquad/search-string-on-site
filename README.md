@@ -28,5 +28,11 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-
+```sh-session
+$ suos mySitemapl.xml "admin.com"
+Runs suos on the the file mySitemapl.xml and searches for the string "admin.com" in the response of each page.
+$ suos mySitemap.xml -a
+Runs suos on mySitemap.xml and searches for the string ""
+```
 <!-- commandsstop -->
+This command can be used to search for a specific string inside the `href` attribute of every `<a>` tag on a web page. It requires a sitemap xml file containing the list of URL on which the search will take place.
