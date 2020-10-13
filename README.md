@@ -20,6 +20,14 @@ $ suos COMMAND
 running command...
 $ suos (-v|--version|version)
 suos/2.0.1 linux-x64 node-v14.9.0
+$ suos (-u|--username)
+Username for HTTP auth
+$ suos (-p|--password)
+Password for HTTP auth. Password is dependant on username
+$ suos -P
+Print the search regex
+$ suos -a
+Search for any URL
 $ suos --help [COMMAND]
 USAGE
   $ suos COMMAND
