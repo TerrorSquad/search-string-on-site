@@ -19,7 +19,7 @@ $ npm install -g suos
 $ suos COMMAND
 running command...
 $ suos (-v|--version|version)
-suos/2.2.0 linux-x64 node-v14.13.1
+suos/2.2.1 linux-x64 node-v14.13.1
 $ suos --help [COMMAND]
 USAGE
   $ suos COMMAND
