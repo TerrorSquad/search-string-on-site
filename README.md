@@ -33,14 +33,17 @@ This command can be used to search for a specific string inside the `href` attri
 
 It will write to STDOUT in a csv format by default.
 
+```sh-session
 $ suos (-u|--username)
 Username for HTTP auth
 $ suos (-p|--password)
 Password for HTTP auth. Password is dependant on username
-$ suos -P
-Print the search regex
 $ suos -a
 Search for any URL
+```
 
 e.g.
-$ suos mySitemap.xml -a -P -u myUser -p superHardPassword
+
+```sh-session
+$ suos mySitemap.xml -a  -u myUser -p superHardPassword
+```
