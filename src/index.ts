@@ -59,10 +59,14 @@ class Suos extends Command {
     const {args, flags} = this.parse(Suos)
     const file = args.file
     if (!file) {
-      throw new Error('You must specify a file')
+      throw new Error('You must specify a file path')
     }
-    if (!isTextFile(file)) {
-      throw new Error('You must provide a text file.')
+    try {
+      if (!(await isTextFile(file))) {
+        throw new Error('You must provide a text file.')
+      }
+    } catch (error) {
+      throw new Error('File does not exist!')
     }
     let urlToFind = ''
     if (!flags.allUrls) {
@@ -73,7 +77,6 @@ class Suos extends Command {
 
     const xmlData = fs.readFileSync(file, 'utf8')
     const parsedXml = xml2Json(xmlData)
-
     const listOfUrls = new Set<string>()
     parsedXml.urlset.url.forEach((el: any) => {
       listOfUrls.add(el.loc)
